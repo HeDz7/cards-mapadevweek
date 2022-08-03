@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Pokémon Slider - MapaDev Week</title>
+
+    <link rel="shortcut icon" href="src/imagens/pokebola.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="src/css/reset.css">
+
+    <link rel="stylesheet" href="src/css/estilos.css">
+
+    <link rel="stylesheet" href="src/css/responsivo.css">
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img src="src/imagens/logo.png" alt="logotipo TeenTitans" class="logo"/>
+      <!-- <h1 class="titulo">MapaDev Week</h1> -->
+    </header>
+
+    <main class="tt-slider">
+      <button class="btn-seta btn-voltar" id="btn-voltar">
+        <i class="fa-solid fa-angles-left"></i>
+      </button>
+
+      <ul class="lista-titans">
+        <li class="cartao selecionado fundo-1">
+          <div class="informacoes">
+            <h2 class="nome">Robin</h2>
+            <p class="status">Líder</p>
+          </div>
+
+          <div class="container-imagem">
+            <img src="src/imagens/robin.png" alt="Robin" class="imagem-titan"/>
+          </div>
+
+          <div class="descricao">
+            <h3 class="titulo">Descrição</h3>
+            <p class="texto">Robin foi criado para trazer um personagem alegre e colorido às histórias escuras e sombrias do Batman. Os criadores também imaginavam que seria útil haver alguém com quem Batman conversar em suas aventuras (em vez de viver pensando ou conversando sozinho). Robin foi o primeiro exemplo de sidekick nas histórias em quadrinhos, isto é, a ideia de um parceiro infantil para um super-herói adulto, objetivando aproximar o público infantil de leitores do personagem principal. Após a criação e sucesso do Robin, surgiram outros sidekicks para vários heróis como Ricardito, para ser o parceiro-mirim do Arqueiro Verde, Bucky (Marvel Comics), para o Capitão América, e até mesmo levando a transformar Jimmy Olsen no sidekick do Superman anos mais tarde.</p>
+          </div>
+        </li>
+
+        <li class="cartao fundo-2">
+          <div class="informacoes">
+            <h2 class="nome">Ravena</h2>
+            <p class="status">Rainha das Trevas</p>
+          </div>
+
+          <div class="container-imagem">
+            <img src="src/imagens/ravena.png" alt="Ravena" class="imagem-titan"/>
+          </div>
+
+          <div class="descricao">
+            <h3 class="titulo">Descrição</h3>
+            <p class="texto">Ravena foi criada para complementar os Jovens Titãs, além disso, todos queriam que ela se tornasse uma espécie de destaque na equipe, pois algo faltava para completar esse pequeno time. Seus criadores, chamados George Pérez e Marv Wolfman, queriam uma heroína diferente, sendo essa parecida com um corvo, aliás, almejavam sua aparência um tanto sombria, justamente para despertar a curiosidade dos fãs da DC, pensando nisso, os dois fizeram a ilustração semelhante a dos corvos, principalmente sua cabeça. Ademais, a roupa da personagem era um tanto peculiar. Como os desenvolvedores afirmam: "não eram adaptadas para combate". Pelos fatos mostrados, Ravena caiu no gosto do público, principalmente pelos jovens, os quais a consideram peça importante nos Jovens Titãs e nas histórias em quadrinhos da DC Comics.</p>
+          </div>
+        </li>
+
+        <li class="cartao fundo-3">
+          <div class="informacoes">
+            <h2 class="nome">Estelar</h2>
+            <p class="status">Princesa</p>
+          </div>
+
+          <div class="container-imagem">
+            <img src="src/imagens/estelar.png" alt="Estelar" class="imagem-titan"/>
+          </div>
+
+          <div class="descricao">
+            <h3 class="titulo">Descrição</h3>
+            <p class="texto">Estelar era extremamente gentil e inocente, mas quando ameaçada reagia violentamente, com uma fúria que precisava ser contida por Dick. Tem a pele dourada e os olhos verdes, como todos os Tamaraneanos. Ela é alta e seu traje em tons de roxo e violeta deixa grande parte de seu corpo à mostra. Antes do evento chamado Crise Infinita, Estelar estava atuando nos Renegados.</p>
+          </div>
+        </li>
+
+        <li class="cartao fundo-4">
+          <div class="informacoes">
+            <h2 class="nome">Cyborg</h2>
+            <p class="status">Homem-Robô</p>
+          </div>
+
+          <div class="container-imagem">
+            <img src="src/imagens/cyborg.png" alt="Cyborg" class="imagem-titan"/>
+          </div>
+
+          <div class="descricao">
+            <h3 class="titulo">Descrição</h3>
+            <p class="texto">Cyborg, inconscientemente, teve os planos de construção de sua cibernética copiada pelo Sangue, que os usou para construir novas super-armadilhas. Indignado, o Cyborg declarou uma vingança pessoal no sangue e confrontou-o pessoalmente quando tentou empregar um gigantesco canhão sônico de uma base submarina. No entanto, as habilidades de artes marciais do sangue conseguiram o melhor dele, e ele ganhou apenas com a assistência de Abelha, que estava naquela época infiltrando o H.I.V.E. com a ajuda de Aqualad. Para perseguir o sangue e outros supervilões de forma mais eficiente, Cyborg ajudou Abelha e Aqualad a estabelecer e equipar um ramo oriental dos Titãs, com Ricardito e Más y Menos juntando-se às fileiras. Logo eles foram atacados por Sangue e um exército de robôs modelados por Cyborg, mas aparentemente conseguiram repelir todos eles. Conheceu uma proposta para permanecer e se tornar o líder dos Titãs da Costa Leste, o Cyborg decidiu ficar com seu novo time.</p>
+          </div>
+        </li>
+
+        <li class="cartao fundo-5">
+          <div class="informacoes">
+            <h2 class="nome">Mutano</h2>
+            <p class="status">Meta-Humano</p>
+          </div>
+
+          <div class="container-imagem">
+            <img src="src/imagens/mutano.png" alt="Mutano" class="imagem-titan"/>
+          </div>
+
+          <div class="descricao">
+            <h3 class="titulo">Descrição</h3>
+            <p class="texto">Os pais de Mutano, Marie e Mark Logan eram geneticistas, e viajavam pelo mundo inteiro estudando os mais variados animais. Um dia os três estavam na Alta Lamumba, África, no meio da floresta. Com os pais de Mutano estava o Doutor Samuel Register, que reclamava da bagunça que ele cometia e pediu um pouco de paz. A mãe de Garfield Logan - o nome verdadeiro de Mutano - então foi para fora do laboratório trocar o óleo de seu jipe, e Garfield foi junto. Quando chegou, escutou um barulho em uma árvore e foi observar o que havia lá. Quando se aproximou viu um macaco verde de uma espécie rara chamada cercocebus viridis, que o mordeu e fez ele contrair uma rara doença chamada sakutia, a febre verde, e quem contraísse esta doença morreria em 48 horas. O pai de Garfield conseguiu salvá-lo, mas o garoto ficou com a pele verde e adquiriu o dom de se transformar em qualquer animal, sempre com a cor esverdeada. Assumindo o nome de Rapaz-fera, ele foi adotado por Steve Dayton e Rita Farr, atuando algum tempo ao lado deles na Patrulha do Destino. Mais tarde, já com o nome Mutano, afiliou-se aos Jovens Titãs. Posteriormente, os integrantes do grupo se separaram e retornaram com o nome de Novos Titans com a ausência de Dick Grayson (agora sendo Asa Noturna), Donna Troy, Wally West e mais tarde, de Koriander (Estelar). Depois de alguns anos o grupo "Novos Titãs" mudou o nome para "Titãs" onde trabalha até os dias atuais.</p>
+          </div>
+        </li>
+      </ul>
+
+      <button class="btn-seta" id="btn-avancar">
+        <i class="fa-solid fa-angles-right"></i>
+      </button>
+    </main>
+
+    <script src="src/js/index.js"></script>  
+  </body>
+</html>
